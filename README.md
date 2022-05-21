@@ -117,18 +117,6 @@ Optional: To check what version of Nvim that you're running, run the following:
 
 ```bash
 $ nvim -v
-NVIM v0.7.0
-Build type: Release
-LuaJIT 2.1.0-beta3
-编译者 brew@Monterey
-
-Features: +acl +iconv +tui
-See ":help feature-compile"
-
-     系统 vimrc 文件: "$VIM/sysinit.vim"
-         $VIM 预设值: "/usr/local/Cellar/neovim/0.7.0/share/nvim"
-
-Run :checkhealth for more info
 ```
 
 For details on installing Nvim, see the [official wiki](https://github.com/neovim/neovim/wiki/Installing-Neovim).
