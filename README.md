@@ -1,16 +1,41 @@
-# Vim IDE setup for Node.js Developers
+# Vim IDE setup for Node.js Developers (macOS)
 
 ## Objectives
 
+- Install iTerm2 (Terminal emulator as alternative to Apple's Terminal app).
 - Install Neovim (hyperextensible Vim-based text editor).
 
-## Install Neovim
+## Install iTerm2
+
+### Install from download
+
+Downloads are available on the [Releases](https://iterm2.com/downloads.html) page.
+
+- Latest [stable release](https://iterm2.com/downloads/stable/iTerm2-3_4_15.zip)
+- Latest [development prerelease](https://iterm2.com/nightly/latest)
 
 ### Install from package
 
-#### macOS/OS X
+#### Homebrew
 
-##### Pre-built archives
+To install the stable version of iTerm2, run the following:
+
+```bash
+$ brew install --cask iterm2
+```
+
+## Install Neovim
+
+### Install from download
+
+Downloads are available on the [Releases](https://github.com/neovim/neovim/releases) page.
+
+- Latest [stable release](https://github.com/neovim/neovim/releases/tag/v0.7.0)
+- Latest [development prerelease](https://github.com/neovim/neovim/releases/nightly)
+
+### Install from package
+
+#### Pre-built archives
 
 ```bash
 $ curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim-macos.tar.gz
@@ -18,7 +43,7 @@ $ tar xzf nvim-macos.tar.gz
 $ ./nvim-osx64/bin/nvim
 ```
 
-##### Homebrew on macOS or Linux
+#### Homebrew
 
 To install the stable version of Nvim, run the following:
 
