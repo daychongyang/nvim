@@ -1,0 +1,2 @@
+vim.o.showmode = false
+
