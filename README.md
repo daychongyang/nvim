@@ -3,6 +3,8 @@
 ## Objectives
 
 - Install iTerm2 (Terminal emulator as alternative to Apple's Terminal app).
+- Install ZSH (Zsh is a shell designed for interactive use).
+- Install Oh-My-Zsh (Unleash your terminal like never before).
 - Install Neovim (hyperextensible Vim-based text editor).
 
 ## Install iTerm2
@@ -22,6 +24,48 @@ To install the stable version of iTerm2, run the following:
 
 ```bash
 $ brew install --cask iterm2
+```
+
+## Install Zsh
+
+Try `zsh --version` before installing it from Homebrew. Preferably newer than or equal to `5.0.8`.
+
+```bash
+$ brew install zsh
+```
+
+To set zsh as your default shell, execute the following assuming a default install of Homebrew
+
+Recent macOS versions:
+
+```bash
+$ chsh -s /usr/local/bin/zsh
+```
+
+macOS High Sierra and older:
+
+```bash
+$ chsh -s /bin/zsh
+```
+
+## Install Oh-My-Zsh
+
+### Install oh-my-zsh via curl
+
+```bash
+$ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+### Install oh-my-zsh via wget
+
+```bash
+$ sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+```
+
+### Install oh-my-zsh via fetch
+
+```bash
+$ sh -c "$(fetch -o - https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 ## Install Neovim
