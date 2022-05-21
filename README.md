@@ -10,9 +10,9 @@
 - Getting started using Lua in Neovim.
 - Setup Neovim for Node.js Developers with Lua.
 
-## Screenshots
+## Snapshots
 
-![Screenshot](./screenshot.png)
+![Snapshot](./snapshots/snapshot.png)
 
 ## Install iTerm2
 
