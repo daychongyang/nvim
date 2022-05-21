@@ -20,6 +20,8 @@ $ ./nvim-osx64/bin/nvim
 
 ##### Homebrew on macOS or Linux
 
+To install the stable version of Nvim, run the following:
+
 ```bash
 $ brew install neovim
 ```
@@ -56,9 +58,23 @@ Run :checkhealth for more info
 
 For details on installing Nvim, see the [official wiki](https://github.com/neovim/neovim/wiki/Installing-Neovim).
 
+Optional: Alias `v`, `vi`, `vim` to `nvim` permanently:
+
+1.  Go to home directory (`cd ~`).
+2.  Edit `.bashrc` or `.zshrc` file.
+3.  Copy the following codes to alias vi editor alias to vim.
+    ```bash
+    # alias <flag> <alias_name>='command'
+    alias v='nvim'
+    alias vi='nvim'
+    alias vim='nvim'
+    ```
+4.  To load the changes, start a new terminal session or source the config file using the command.
+    ```bash
+      $ source ~/.zshrc
+    ```
+5.  To test the above settings, execute “bash” on your terminal.
+
 ## Authors
 
 - [@daychongyang](https://www.github.com/daychongyang)
-
-
-
