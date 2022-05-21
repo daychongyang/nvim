@@ -6,6 +6,12 @@
 - Install ZSH (Zsh is a shell designed for interactive use).
 - Install Oh-My-Zsh (Unleash your terminal like never before).
 - Install Neovim (hyperextensible Vim-based text editor).
+- Getting started using Lua in Neovim.
+- Setup Neovim for Node.js Developers with Lua.
+
+## Screenshots
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 ## Install iTerm2
 
@@ -144,6 +150,30 @@ Optional: Alias `v`, `vi`, `vim` to `nvim` permanently:
     ```
 5.  To test the above settings, execute “zsh” on your terminal.
 
+## Getting started using Lua in Neovim
+
+### Where to put lua files
+
+#### init.lua
+
+Neovim
+
+## Setup Neovim for Node.js Developers with Lua
+
+### Prerequisites
+
+1. [Node.js](https://nodejs.org/zh-cn/)
+2. [Git](https://git-scm.com/book/zh/v2)
+
+## Guides and resources
+
+- [nvim-lua-guide](https://github.com/nanotee/nvim-lua-guide)
+- [nvim-lua-guide-zh](https://github.com/glepnir/nvim-lua-guide-zh)
+
 ## Authors
 
 - [@daychongyang](https://www.github.com/daychongyang)
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
