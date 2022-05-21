@@ -142,7 +142,7 @@ Optional: Alias `v`, `vi`, `vim` to `nvim` permanently:
     ```bash
       $ source ~/.zshrc
     ```
-5.  To test the above settings, execute “bash” on your terminal.
+5.  To test the above settings, execute “zsh” on your terminal.
 
 ## Authors
 
