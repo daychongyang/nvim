@@ -153,7 +153,14 @@ To install the stable version of StyLua using cargo, run the following:
 $ cargo install stylua
 ```
 
-## Getting started using Lua in Neovim
+## Setup Neovim for Node.js Developers with Lua
+
+### Prerequisites
+
+1. [Node.js](https://nodejs.org/zh-cn/)
+2. [Git](https://git-scm.com/book/zh/v2)
+
+### Getting started using Lua in Neovim
 
 Neovim supports loading an `init.lua` file for configuration instead of the usual `init.vim`. For details, see [:help config](https://neovim.io/doc/user/starting.html#config)
 
@@ -172,7 +179,7 @@ $ tree .
 The following Lua code will load `basic.lua`:
 
 ```lua
-require('basic')
+require("basic")
 ```
 
 ⚠️ Notice the absence of a `.lua` extension.
@@ -180,19 +187,20 @@ require('basic')
 Similarly, loading `plugins/dashboard.lua` is done like so:
 
 ```lua
-require('plugins.dashboard')
+require("plugins.dashboard")
 -- or
-require('plugins/dashboard')
+require("plugins/dashboard")
 ```
 
 Path separators are denoted by either a dot `.` or a slash `/`.
 
-## Setup Neovim for Node.js Developers with Lua
+A folder containing `init.lua` file can be required directly, without having to specify the name of the file.
 
-### Prerequisites
+```lua
+require("other_modules") -- load other_modules/init.lua
+```
 
-1. [Node.js](https://nodejs.org/zh-cn/)
-2. [Git](https://git-scm.com/book/zh/v2)
+Neovim exposes a global `vim` variable which serves as an entry point to interact with its APIs from Lua. It provides users with extended "standard library" of functions as well as various submodules.
 
 ## Guides and resources
 
