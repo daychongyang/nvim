@@ -13,5 +13,5 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           # CLI arguments
-          args: --check .
+          args: --check --color Always .
           # Specify `version` to pin a specific version, otherwise action will always use latest version/automatically update
