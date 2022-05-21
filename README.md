@@ -55,3 +55,10 @@ Run :checkhealth for more info
 ```
 
 For details on installing Nvim, see the [official wiki](https://github.com/neovim/neovim/wiki/Installing-Neovim).
+
+## Authors
+
+- [@daychongyang](https://www.github.com/daychongyang)
+
+
+
