@@ -6,6 +6,7 @@
 - Install ZSH (Zsh is a shell designed for interactive use).
 - Install Oh-My-Zsh (Unleash your terminal like never before).
 - Install Neovim (hyperextensible Vim-based text editor).
+- Install StyLua (An opinionated code formatter for Lua).
 - Getting started using Lua in Neovim.
 - Setup Neovim for Node.js Developers with Lua.
 
@@ -138,13 +139,53 @@ Optional: Alias `v`, `vi`, `vim` to `nvim` permanently:
     ```
 5.  To test the above settings, execute “zsh” on your terminal.
 
+## Install StyLua
+
+### Install from download
+
+Downloads are available on the [Releases](https://github.com/JohnnyMorganz/StyLua/releases) page.
+
+### Install from Crates.io
+
+To install the stable version of StyLua using cargo, run the following:
+
+```bash
+$ cargo install stylua
+```
+
 ## Getting started using Lua in Neovim
 
-### Where to put lua files
+Neovim supports loading an `init.lua` file for configuration instead of the usual `init.vim`. For details, see [:help config](https://neovim.io/doc/user/starting.html#config)
 
-#### init.lua
+Lua modules are found inside a `lua/` folder in `runtimepath` and can be imported using `require()`.
 
-Neovim
+```bash
+$ tree .
+.
+├── init.lua
+└── lua
+    ├── basic.lua
+    └── plugins
+        └── dashboard.lua
+```
+
+The following Lua code will load `basic.lua`:
+
+```lua
+require('basic')
+```
+
+⚠️ Notice the absence of a `.lua` extension.
+
+Similarly, loading `plugins/dashboard.lua` is done like so:
+
+```lua
+require('plugins.dashboard')
+-- or
+require('plugins/dashboard')
+```
+
+Path separators are denoted by either a dot `.` or a slash `/`.
 
 ## Setup Neovim for Node.js Developers with Lua
 

@@ -1,2 +1,1 @@
 vim.o.showmode = false
-
