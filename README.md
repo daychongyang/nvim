@@ -200,7 +200,25 @@ A folder containing `init.lua` file can be required directly, without having to 
 require("other_modules") -- load other_modules/init.lua
 ```
 
-Neovim exposes a global `vim` variable which serves as an entry point to interact with its APIs from Lua. It provides users with extended "standard library" of functions as well as various submodules.
+#### Lua Vimscript Bridge
+
+Neovim exposes a global `vim` variable which serves as an entry point to interact with its APIs from Lua. It provides an interface to Vimscript [`variables`](https://neovim.io/doc/user/eval.html#variables) and [`functions`](https://neovim.io/doc/user/eval.html#functions), and editor commands and [`options`](https://neovim.io/doc/user/options.html#options).
+
+#### Lua Vim Variables
+
+The Vim editor global dictionaries |[g:](https://neovim.io/doc/user/eval.html#g:)| |[w:](https://neovim.io/doc/user/eval.html#w:)| |[b:](https://neovim.io/doc/user/eval.html#b:)| |[t:](https://neovim.io/doc/user/eval.html#t:)| |[v:](https://neovim.io/doc/user/eval.html#v:)| can be accessed
+from Lua conveniently and idiomatically by referencing the [`vim.*`](https://neovim.io/doc/user/lua.html#lua-vim-variables) Lua tables
+described below. In this way you can easily read and modify global Vimscript
+variables from Lua.
+
+Example:
+
+```lua
+vim.g.foo = 5     -- Set the g:foo Vimscript variable.
+print(vim.g.foo)  -- Get and print the g:foo Vimscript variable.
+vim.g.foo = nil   -- Delete (:unlet) the Vimscript variable.
+vim.b[2].foo = 6  -- Set b:foo for buffer 2
+```
 
 ## Guides and resources
 
@@ -214,3 +232,7 @@ Neovim exposes a global `vim` variable which serves as an entry point to interac
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
+```
+
+```
