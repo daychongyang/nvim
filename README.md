@@ -1,6 +1,6 @@
 # Vim IDE setup for Node.js Developers (macOS)
 
-## Objectives
+# Objectives
 
 - Install iTerm2 (Terminal emulator as alternative to Apple's Terminal app).
 - Install ZSH (Zsh is a shell designed for interactive use).

@@ -1,1 +1,3 @@
+require "preflight"
+
 require "basic"
