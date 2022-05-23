@@ -22,6 +22,6 @@ vim.wo.cursorline = true
 -- When and how to draw the signcolumn.
 vim.wo.signcolumn = "yes"
 -- Highlight the screen columns with ColorColumn.
-vim.wo.colorcolumn = "80"
+vim.wo.colorcolumn = "120"
 -- How to display the text.
 vim.wo.wrap = false

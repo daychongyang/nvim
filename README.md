@@ -182,7 +182,7 @@ The following Lua code will load `basic.lua`:
 require("basic")
 ```
 
-⚠️ Notice the absence of a `.lua` extension.
+⚠️  Notice the absence of a `.lua` extension.
 
 Similarly, loading `plugins/dashboard.lua` is done like so:
 
@@ -206,9 +206,7 @@ Neovim exposes a global `vim` variable which serves as an entry point to interac
 
 #### Lua Vim Variables
 
-The Vim editor global dictionaries |[g:](https://neovim.io/doc/user/eval.html#g:)| |[w:](https://neovim.io/doc/user/eval.html#w:)| |[b:](https://neovim.io/doc/user/eval.html#b:)| |[t:](https://neovim.io/doc/user/eval.html#t:)| |[v:](https://neovim.io/doc/user/eval.html#v:)| can be accessed
-from Lua conveniently and idiomatically by referencing the [`vim.*`](https://neovim.io/doc/user/lua.html#lua-vim-variables) Lua tables
-described below. In this way you can easily read and modify global Vimscript
+The Vim editor global dictionaries |[g:](https://neovim.io/doc/user/eval.html#g:)| |[w:](https://neovim.io/doc/user/eval.html#w:)| |[b:](https://neovim.io/doc/user/eval.html#b:)| |[t:](https://neovim.io/doc/user/eval.html#t:)| |[v:](https://neovim.io/doc/user/eval.html#v:)| can be accessed from Lua conveniently and idiomatically by referencing the [`vim.*`](https://neovim.io/doc/user/lua.html#lua-vim-variables) Lua tables described below. In this way you can easily read and modify global Vimscript
 variables from Lua.
 
 Example:
@@ -232,7 +230,3 @@ vim.b[2].foo = 6  -- Set b:foo for buffer 2
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
-
-```
-
-```
