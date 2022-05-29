@@ -1,4 +1,4 @@
-# Vim IDE setup for Node.js Developers (macOS)
+# ![vim](https://www.vim.org/images/vim_on_fire.gif) IDE setup for Node.js Developers (macOS)
 
 # Objectives
 
@@ -182,7 +182,7 @@ The following Lua code will load `basic.lua`:
 require("basic")
 ```
 
-⚠️  Notice the absence of a `.lua` extension.
+⚠️ Notice the absence of a `.lua` extension.
 
 Similarly, loading `plugins/dashboard.lua` is done like so:
 
