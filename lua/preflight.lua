@@ -1,7 +1,10 @@
 -- https://neovim.io/doc/user/builtin.html
 -- https://neovim.io/doc/user/lua.html
 
-local path = require "path"
+local function resolve(...)
+  local result = table.concat({ ... }, vim.loop.os_uname().version:match "Windows" and "\\" or "/")
+  return result
+end
 
 if vim.fn.has "nvim-0.7" ~= 1 then
   vim.notify("Oops! Something went wrong, please upgrade your Neovim to >= v0.7.0.", vim.log.levels.WARN)
@@ -9,14 +12,13 @@ if vim.fn.has "nvim-0.7" ~= 1 then
   vim.cmd "cquit"
 end
 
-local packer = path.resolve(vim.fn.stdpath "data", "site", "pack", "packer", "start", "packer.nvim")
-if vim.fn.empty(vim.fn.glob(packer)) == 1 then
-  vim.notify("Oops! Something went wrong, please upgrade your Neovim to >= v0.7.0.", vim.log.levels.INFO)
+local packer = resolve(vim.fn.stdpath "data", "site", "pack", "packer", "start", "packer.nvim")
+if not vim.fn.isdirectory(packer) then
+  vim.notify("Installing dependencies...", vim.log.levels.INFO)
   vim.fn.system {
     "git",
     "clone",
-    "--depth",
-    "1",
+    "--depth=1",
     "https://github.com/wbthomason/packer.nvim",
     packer,
   }

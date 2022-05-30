@@ -224,7 +224,12 @@ vim.b[2].foo = 6  -- Set b:foo for buffer 2
 - [nvim-lua-guide-zh](https://github.com/glepnir/nvim-lua-guide-zh)
 - [packer.nvim](https://github.com/wbthomason/packer.nvim)
 - [onedarkpro.nvim](https://github.com/olimorris/onedarkpro.nvim)
+- [dashboard-nvim](https://github.com/glepnir/dashboard-nvim)
+- [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)
 - [barbar.nvim](https://github.com/romgrk/barbar.nvim)
+- [neogit](https://github.com/TimUntersberger/neogit)
+- [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+- [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
 
 ## Authors
 

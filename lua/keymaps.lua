@@ -10,3 +10,5 @@ local function keymap(mode, lhs, rhs, opts)
 
   vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
+
+-- keymap('n', "","")
