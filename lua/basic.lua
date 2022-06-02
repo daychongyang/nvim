@@ -1,7 +1,7 @@
 -- https://neovim.io/doc/user/options.html
 
 -- When set to "dark" or "light", adjusts the default color groups for that background type.
-vim.g.background = "dark"
+vim.o.background = "dark"
 -- If in Insert, Replace or Visual mode put a message on the last line.
 vim.opt.showmode = false
 -- Make a backup before overwriting a file.
